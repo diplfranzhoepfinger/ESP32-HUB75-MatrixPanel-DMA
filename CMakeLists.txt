@@ -49,7 +49,7 @@ else()
 		# Don't enable PSRAM based framebuffer just because it's an S3.
 		# This is an advanced option and should only be used with an S3 with Octal-SPI RAM.
         # target_compile_options(${COMPONENT_TARGET} PUBLIC -DSPIRAM_FRAMEBUFFER)
-		target_compile_options(${COMPONENT_TARGET} PUBLIC)
+		target_compile_options(${COMPONENT_TARGET} PUBLICS -DSPIRAM_FRAMEBUFFER)
     endif()
 endif()
 
